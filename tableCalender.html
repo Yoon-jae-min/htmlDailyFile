@@ -3,34 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calendar</title>
     <style>
+        @font-face{
+            font-family: CustomFont;
+            src: url('UMAIRI.TTF') format('truetype');
+        }
+        body{
+            font-family: CustomFont, Arial, Helvetica, sans-serif;
+        }
         table{
             width: 600px;
-            height: 500px;
+            height: 525px;
             table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 0;
         }
-        span{
+        td{
+            border: 2px solid;
+        }
+        #title-text{
             font-size: 50px;
-            color: #AEA5FF;
+            color: #9966FF;
+            padding-bottom: 0px;
         }
         #table_head{
             background-color: #FFCDFF;
             height: 45px;
             font-size: 15px;
         }
+        #table_head td{
+            padding-left: 3px;
+        }
+        #table_foot{
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
         .table_content{
+            height: 85px;
             text-align: right;
             vertical-align: top;
         }
+        .small-text{
+            font-size: 9px;
+            font-weight: bold;
+            margin-right: 2px;
+        }
+        .date_holiday{
+            color: #FF0E49;
+        }
+        .date_saturday{
+            color: #2D40FF;
+        }
         h3{
-            margin: 0;
+            margin-top: 7px;
+            margin-right: 2px;
+            margin-bottom: 0;
+            line-height: normal;
+        }
+        img{
+            height: 80px;
+            width: 150px;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <table border=1 cellspacing=0>
-        <caption><span>May 5</span><sub>2012</sub></caption>
+    <table>
+        <caption><span id="title-text">May 5</span><sub>2012</sub></caption>
 
         <tr id="table_head">
             <td>Sun</td>
@@ -44,47 +86,50 @@
         <tr class="table_content">
             <td></td>
             <td></td>
-            <td><h3>1</h3></td>
+            <td><h3>1</h3><span class="small-text">근로자의날</span></td>
             <td><h3>2</h3></td>
             <td><h3>3</h3></td>
             <td><h3>4</h3></td>
-            <td><h3>5</h3></td>
+            <td><h3 class="date_holiday">5</h3><span class="small-text" style="color: #CD04FF;">어린이날</span><br><span class="small-text">입하3.15</span></td>
         </tr>
         <tr class="table_content">
-            <td><h3>6</h3></td>
+            <td><h3 class="date_holiday">6</h3><span class="small-text">내생일</span></td>
             <td><h3>7</h3></td>
-            <td><h3>8</h3></td>
+            <td><h3>8</h3><span class="small-text">어버이날</span></td>
             <td><h3>9</h3></td>
             <td><h3>10</h3></td>
             <td><h3>11</h3></td>
-            <td><h3>12</h3></td>
+            <td><h3 class="date_saturday">12</h3><span class="small-text">음력4.10</span></td>
         </tr>
         <tr class="table_content">
-            <td><h3>13</h3></td>
+            <td><h3 class="date_holiday">13</h3></td>
             <td><h3>14</h3></td>
-            <td><h3>15</h3></td>
+            <td><h3>15</h3><span class="small-text">스승의 날</span></td>
             <td><h3>16</h3></td>
             <td><h3>17</h3></td>
-            <td><h3>18</h3></td>
-            <td><h3>19</h3></td>
+            <td><h3>18</h3><span class="small-text">5.18민주화운동</span><br><span class="small-text">기념일</span></td>
+            <td><h3 class="date_saturday">19</h3></td>
         </tr>
         <tr class="table_content">
-            <td><h3>20</h3></td>
-            <td><h3>21</h3></td>
+            <td><h3 class="date_holiday">20</h3></td>
+            <td><h3>21</h3><span class="small-text">성년의날</span><br><span class="small-text">부부의날</span><br><span class="small-text">소만4.1</span></td>
             <td><h3>22</h3></td>
             <td><h3>23</h3></td>
             <td><h3>24</h3></td>
             <td><h3>25</h3></td>
-            <td><h3>26</h3></td>
+            <td><h3 class="date_saturday">26</h3></td>
         </tr>
         <tr class="table_content">
-            <td><h3>27</h3></td>
-            <td><h3>28</h3></td>
+            <td><h3 class="date_holiday">27</h3></td>
+            <td><h3 class="date_holiday">28</h3><span class="small-text" style="color: #CD04FF;">석가탄신일</span></td>
             <td><h3>29</h3></td>
             <td><h3>30</h3></td>
-            <td><h3>31</h3></td>
+            <td><h3>31</h3><span class="small-text">바다의날</span></td>
             <td></td>
             <td></td>
+        </tr>
+        <tr>
+            <td id="table_foot" colspan="7"><img src="calendarFooter.jpg"/></td>
         </tr>
     </table>
 </body>
