@@ -1,0 +1,14 @@
+.first{
+    font-weight: bold;
+    font-size: 15px;
+    list-style-image: url(images/circle.png);
+}
+.second{
+    list-style-type: disc;
+}
+.third{
+    list-style-type: '- ';
+}
+#end:before{
+    content: url(images/circle.png);
+}

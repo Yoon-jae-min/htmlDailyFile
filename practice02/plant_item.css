@@ -1,0 +1,12 @@
+*{
+    text-align: center;
+}
+#item{
+    list-style: none;
+}
+#subject{
+    font-weight: bold;
+}
+#comment{
+    color: red;
+}

@@ -1,0 +1,26 @@
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #752D7C;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 5px 5px 4px gray;
+    font-weight: bold;
+}
+#sub_title{
+    font-size: 30px;
+    color: green;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#italic{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+#body{
+    color: #444444;
+    font-family: 돋움, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 150%;
+}
