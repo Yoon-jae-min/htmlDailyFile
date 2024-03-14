@@ -1,0 +1,22 @@
+
+#menu li{
+    list-style: none;   
+
+    float: left;
+    margin-bottom: 10px;
+}
+#visit_info{
+    width: 750px;
+    padding-bottom: 5px;
+    border-bottom: 1px #cccccc solid;
+}
+#fee{
+    background-color: #f6fdf7;
+    border: 1px #bcd3be solid;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+}
+#trafic li{
+    list-style-image: url("images/bulit_green.gif");
+}
